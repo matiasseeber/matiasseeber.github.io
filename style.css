@@ -314,6 +314,7 @@ main>.trabajos>.divTecnologias>ul>li>p:hover {
 
 main>.trabajos>.divTecnologias>ul>li>p {
     text-align: center;
+    scroll-margin-top: 40px;
 }
 
 main>section {
