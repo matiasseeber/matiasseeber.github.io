@@ -39,23 +39,6 @@ body {
     display: none;
 }
 
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: linear-gradient(180deg, #0A192F 0%, #172570 100%);
-    border-bottom: 1px white solid;
-    color: white;
-    transform: translateY(-100%);
-    list-style: none;
-    padding-top: 4rem;
-    padding: 10px;
-    z-index: 999;
-    box-shadow: 0 0 20px #64FFDA inset;
-}
-
 button>span {
     height: 100%;
     width: 100%;
@@ -67,14 +50,30 @@ button>span {
     font-weight: bold;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #0A192F 0%, #172570 100%);
+    color: white;
+    transform: translateY(-100%);
+    list-style: none;
+    padding-top: 4rem;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 0 20px #64FFDA inset;
+}
+
+body>ul>li {
+    margin-left: 20px;
+    padding: 10px;
+}
+
 .showMenu {
     transform: translateY(0);
     z-index: 999;
-}
-
-ul>li {
-    margin-left: 20px;
-    padding: 1rem 0;
 }
 
 li>a:hover {
@@ -161,6 +160,7 @@ aside {
 h1 {
     padding-top: 0%;
     margin: 20px;
+    font-size: xx-large;
     animation: rainbow 5s linear infinite alternate both;
 }
 
@@ -175,7 +175,7 @@ main>.acercaDe>.divAcercaDeTexto {
 
 main>.acercaDe>.divAcercaDeTexto>p {
     margin-bottom: 40px;
-    text-align: justify;
+    text-align: left;
 }
 
 main>.acercaDe>.divAcercaDeTexto>a {
@@ -299,26 +299,19 @@ main>.trabajos>.divTecnologias>ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 main>.trabajos>.divTecnologias>ul>li {
     padding: 3px;
     text-align: center;
     font-size: 19px;
-    width: 45%;
+    width: 50%;
     height: 70px;
 }
 
-main>.trabajos>.divTecnologias>ul>.liTecIzq {
-    padding-left: 10%;
-}
-
-main>.trabajos>.divTecnologias>ul>.liTecDer {
-    padding-left: 15%;
-}
-
 main>.trabajos>.divTecnologias>ul>li>p {
-    width: fit-content;
+    text-align: center;
 }
 
 main>.trabajos>.divExperiencia {
