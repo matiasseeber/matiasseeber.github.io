@@ -310,6 +310,11 @@ main>.trabajos>.divTecnologias>ul>li {
     height: 70px;
 }
 
+main>.trabajos>.divTecnologias>ul>li:hover {
+    transform: scale(1.1);
+    color: #64FFDA;
+}
+
 main>.trabajos>.divTecnologias>ul>li>p {
     text-align: center;
 }
