@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17174b092b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="ham">
+            <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+            <span class="menuIcon material-icons">
+                MENU
+            </span>
+            <span class="xIcon material-icons">
+                CLOSE
+            </span>
+          </button>
+    <ul class="menu">
+        <li><a class="menuLink" href="#acercaDe">ABOUT</a></li>
+        <li><a class="menuLink" href="#proyectos">PROYECTOS</a></li>
+        <li><a class="menuLink" href="#experiencia">EXPERIENCIA</a></li>
+        <li><a class="menuLink" href="#contacto">CONTACTO</a></li>
+    </ul>
+    <main>
+        <section class="acercaDe" id="acercaDe">
+            <H1>MATIAS SEEBER</H1>
+            <div>
+                <h3>ACERCA DE MI</h3>
+            </div>
+            <div class="divAcercaDeTexto">
+                <p>Soy un programador argentino de 20 años, actualmente estoy en el ultimo cuatrimestre de la tecnicatura universitaria en programacion en la Universidad Tecnologica Nacional.</p>
+                <a href="#contacto">CONTACTAR</a>
+            </div>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <div class="divProyectosTitulo">
+                <h3>PROYECTOS</h3>
+            </div>
+            <a class="shopmarket proyecto" href="https://github.com/matiasseeber/TPintegradorV3">
+                <div><i class="far fa-folder"></i></div>
+                <div class="tituloProyecto">
+                    <H4>SHOPMARKET</H4>
+                </div>
+                <p>
+                    Sistema de gestion basado en un supermercado ficticio, hecho con HTML, CSS en la parte front end, C# como lenguaje back end y SQL server como motor de base de datos.
+                </p>
+            </a>
+            <a class="laboratorio3 proyecto" href="https://github.com/matiasseeber/TPFINALAB3">
+                <div class="divProyectosTitulo"><i class="far fa-folder"></i></div>
+                <div class="tituloProyecto">
+                    <H4>BD LAB IIV</H4>
+                </div>
+                <p>
+                    Base de datos relacional realizada como proyecto final de laboratorio de computacion IIV. El mismo termino con una nota perfecta.
+                </p>
+            </a>
+        </section>
+        <section class="trabajos" id="trabajos">
+            <div class="divExperiencia" id="experiencia">
+                <h3>EXPERIENCIA LABORAL</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, culpa perferendis nisi reiciendis nostrum asperiores, ullam animi accusantium fugiat beatae minima quis expedita dolor cum impedit perspiciatis temporibus illo veritatis sint repellendus
+                    omnis quae tenetur illum. Nisi quidem magni nulla natus assumenda numquam veniam eligendi, dolores voluptate commodi repellat velit.
+                </p>
+            </div>
+            <div class="divTecnologias">
+                <h3>TECNOLOGIAS</h3>
+                <ul>
+                    <li class="liTecIzq">
+                        <p>HTML</p>
+                    </li>
+                    <li class="liTecDer">
+                        <p>CSS</p>
+                    </li>
+                    <li class="liTecIzq">
+                        <p>JAVA</p>
+                    </li>
+                    <li class="liTecDer">
+                        <p>C++</p>
+                    </li>
+                    <li class="liTecIzq">
+                        <p>C#</p>
+                    </li>
+                    <li class="liTecDer">
+                        <p>PYTHON</p>
+                    </li>
+                    <li class="liTecIzq">
+                        <p>ASP.NET</p>
+                    </li>
+                    <li class="liTecDer">
+                        <p>SQL Server</p>
+                    </li>
+                    <li class="liTecIzq">
+                        <p>MySQL</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div>
+                <H3>CONTACTO</H3>
+            </div>
+            <form action="https://formsubmit.co/adaaa2640e02b82444b708cfa8c5c66b" method="POST" autocomplete="off">
+                <input class="txtNombre" name="txtNombre" type="text" placeholder="NOMBRE Y APELLIDO" required>
+                <input class="txtEmail" name="txtEmail" type="email" placeholder="EMAIL" required>
+                <input class="txtTelefono" name="txtTelefono" type="number" placeholder="TELEFONO" required>
+                <textarea class="txtComentarios" name="txtComentarios" id="txtComentarios" rows="5" placeholder="COMENTARIOS" required></textarea>
+                <button class="btnReset" type="reset">BORRAR TODO</button>
+                <button class="btnSubmit" type="submit">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+    <aside class="aside1">
+        <div>
+            <ul>
+                <a href="https://www.instagram.com/matiasseeber9/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/matias-seeber-ab7a3a208/"><i class="fab fa-linkedin-in"></i></a>
+                <a href=" https://api.whatsapp.com/send?phone=541136473770"><i class="fab fa-whatsapp"></i></a>
+            </ul>
+        </div>
+        <div class="lineaVertical"></div>
+    </aside>
+    <footer>
+        <div>Programado y diseñado por Maitas Seeber. HTML Y CSS.</div>
+        <div>Todos Los Derechos Reservados © 2021</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
