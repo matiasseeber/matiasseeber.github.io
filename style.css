@@ -308,11 +308,13 @@ main>.trabajos>.divTecnologias>ul>li {
     font-size: 19px;
     width: 50%;
     height: 70px;
+    transition: 0.5s;
 }
 
-main>.trabajos>.divTecnologias>ul>li:hover {
-    transform: scale(1.1);
+main>.trabajos>.divTecnologias>ul>li>p:hover {
+    transform: scale(1.5);
     color: #64FFDA;
+    cursor: default;
 }
 
 main>.trabajos>.divTecnologias>ul>li>p {
