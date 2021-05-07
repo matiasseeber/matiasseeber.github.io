@@ -166,7 +166,6 @@ h1 {
 
 main>.acercaDe {
     margin-top: 00px;
-    scroll-margin-top: 30px;
 }
 
 main>.acercaDe>.divAcercaDeTexto {
@@ -281,10 +280,6 @@ main>.proyectos>.proyecto>div>i {
     font-size: 50px;
 }
 
-main>.trabajos {
-    scroll-margin-top: 20px;
-}
-
 main>.trabajos>.divTecnologias>h3 {
     padding-bottom: 10px;
 }
@@ -319,6 +314,10 @@ main>.trabajos>.divTecnologias>ul>li>p:hover {
 
 main>.trabajos>.divTecnologias>ul>li>p {
     text-align: center;
+}
+
+main>section {
+    scroll-margin-top: 40px;
 }
 
 main>.trabajos>.divExperiencia {
@@ -377,7 +376,6 @@ aside>div>ul>a>.fa-whatsapp:hover {
 }
 
 .contacto {
-    scroll-margin-top: 30px;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -510,5 +508,8 @@ footer>div {
     }
     .showMenu {
         display: flex;
+    }
+    main>section {
+        scroll-margin-top: 30px;
     }
 }
