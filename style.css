@@ -94,8 +94,6 @@ li>a:hover {
 main {
     grid-area: main;
     text-align: center;
-    padding: 5%;
-    padding-top: 0;
     padding-bottom: 10px;
     animation: slide-in-top 4s ease-out 1 alternate both;
 }
@@ -169,7 +167,8 @@ main>.acercaDe {
 }
 
 main>.acercaDe>.divAcercaDeTexto {
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 main>.acercaDe>.divAcercaDeTexto>p {
@@ -439,6 +438,10 @@ footer {
 footer>div {
     padding: 5px;
     width: 100%;
+}
+
+main>.trabajos {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width:500px) and (max-width:1023px) {
