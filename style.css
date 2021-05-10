@@ -86,7 +86,7 @@ aside {
 
 h1 {
     font-size: 27px;
-    padding: 25px 0 0 20px;
+    padding: 0 0 0 20px;
     animation: rainbow 5s linear infinite alternate both;
 }
 
