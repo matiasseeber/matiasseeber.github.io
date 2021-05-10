@@ -14,78 +14,7 @@
 body {
     background-color: #0A192F;
     display: grid;
-    grid-template-areas: "main main main" "contacto contacto contacto" "aside aside aside" "footer footer footer";
-}
-
-
-/* NAV */
-
-.ham {
-    position: fixed;
-    /* keep the hamburger button above everything */
-    z-index: 100;
-    top: 0.01rem;
-    right: 0.8rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: black;
-    border: black solid 1px;
-    cursor: pointer;
-    padding: 0;
-    z-index: 1000;
-}
-
-.xIcon {
-    display: none;
-}
-
-button>span {
-    height: 100%;
-    width: 100%;
-    font-size: 10px;
-    text-align: center;
-    color: #64FFDA;
-    text-align: center;
-    padding-top: 30%;
-    font-weight: bold;
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: linear-gradient(180deg, #0A192F 0%, #172570 100%);
-    color: white;
-    transform: translateY(-100%);
-    list-style: none;
-    padding-top: 4rem;
-    padding: 10px;
-    z-index: 999;
-    box-shadow: 0 0 20px #64FFDA inset;
-}
-
-body>ul>li {
-    margin-left: 20px;
-    padding: 10px;
-}
-
-.showMenu {
-    transform: translateY(0);
-    z-index: 999;
-}
-
-li>a:hover {
-    color: #64FFDA;
-    border-bottom: #64FFDA 1PX solid;
-}
-
-.menuLink {
-    display: inline;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
+    grid-template-areas: "header header header" "main main main" "contacto contacto contacto" "aside aside aside" "footer footer footer";
 }
 
 
@@ -156,6 +85,7 @@ aside {
 }
 
 h1 {
+    font-size: xx-large;
     padding-top: 0%;
     margin: 20px;
     font-size: xx-large;
@@ -313,17 +243,16 @@ main>.trabajos>.divTecnologias>ul>li>p:hover {
 
 main>.trabajos>.divTecnologias>ul>li>p {
     text-align: center;
-    scroll-margin-top: 40px;
 }
 
 main>section {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 100px;
 }
 
 main>.contacto,
 #experiencia,
 #divTecnologias {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 100px;
 }
 
 main>section>#experiencia,
@@ -465,7 +394,7 @@ main>.trabajos {
     }
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1000px) {
     body>main {
         padding: 10%;
         padding-top: 0;
@@ -525,8 +454,5 @@ main>.trabajos {
     }
     .showMenu {
         display: flex;
-    }
-    main>section {
-        scroll-margin-top: 30px;
     }
 }

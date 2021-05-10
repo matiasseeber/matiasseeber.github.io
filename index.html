@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navBar/navBar.css">
     <script src="https://kit.fontawesome.com/17174b092b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -13,24 +14,37 @@
 </head>
 
 <body>
-    <button class="ham">
-            <span class="menuIcon material-icons">
-                MENU
-            </span>
-            <span class="xIcon material-icons">
-                CLOSE
-            </span>
-          </button>
-    <ul class="menu">
-        <li><a class="menuLink" href="#acercaDe">ABOUT</a></li>
-        <li><a class="menuLink" href="#proyectos">PROYECTOS</a></li>
-        <li><a class="menuLink" href="#experiencia">EXPERIENCIA</a></li>
-        <li><a class="menuLink" href="#divTecnologias">TECNOLOGIAS</a></li>
-        <li><a class="menuLink" href="#contacto">CONTACTO</a></li>
-    </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <H1>MATIAS SEEBER</H1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#acercaDe" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="nav-link">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experiencia" class="nav-link">EXPERIENCIA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#divTecnologias" class="nav-link">TECNOLOGIAS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">CONTACTO</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="acercaDe" id="acercaDe">
-            <H1>MATIAS SEEBER</H1>
             <div>
                 <h3>ACERCA DE MI</h3>
             </div>
@@ -136,6 +150,7 @@
         <div>Todos Los Derechos Reservados © 2021</div>
     </footer>
     <script src="app.js"></script>
+    <script src="navBar/navBar.js"></script>
 </body>
 
 </html>
