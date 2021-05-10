@@ -18,6 +18,15 @@ a {
     text-decoration: none;
 }
 
+@keyframes neon {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 20px inset #64FFDA;
+    }
+}
+
 header {
     border-bottom: 1px solid #64FFDA;
     position: sticky;
@@ -26,7 +35,7 @@ header {
     background-color: #153565;
     z-index: 1000;
     height: 85px;
-    box-shadow: 0 0 10px inset #64FFDA;
+    animation: neon 2s linear infinite alternate both;
 }
 
 .navbar {

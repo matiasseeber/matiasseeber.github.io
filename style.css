@@ -110,7 +110,7 @@ main>.acercaDe>.divAcercaDeTexto>a {
     background: none;
     border-radius: 10px;
     border: #64FFDA 1px solid;
-    box-shadow: 0 0 10px #64FFDA;
+    animation: neon 2s linear infinite alternate both;
     transition: 0.5s;
 }
 
@@ -342,6 +342,10 @@ button {
     margin-bottom: 10px;
     border: white 1px solid;
     box-shadow: 0 0 10px #64FFDA;
+}
+
+.contacto>form>button {
+    animation: neon 2s linear infinite alternate both;
 }
 
 .contacto>form>button:hover {
