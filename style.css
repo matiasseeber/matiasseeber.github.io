@@ -127,7 +127,7 @@ main>section {
 main>.proyectos {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "titulo titulo" "shopmarket shopmarket" "lab3 lab3";
+    grid-template-areas: "titulo titulo" "shopmarket shopmarket" "lab3 lab3" "lab2 lab2" "prox prox";
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
@@ -139,6 +139,19 @@ main>.proyectos {
 
 .laboratorio3 {
     grid-area: lab3;
+}
+
+.laboratorio2 {
+    grid-area: lab2;
+}
+
+.proximamente {
+    grid-area: prox;
+}
+
+.proximamente>div>h4,
+.proximamente>p {
+    color: yellow;
 }
 
 main>.proyectos>.divProyectosTitulo {
@@ -185,6 +198,11 @@ main>.proyectos>.proyecto>.tituloProyecto {
 
 main>.proyectos>.proyecto>.tituloProyecto {
     text-align: left;
+}
+
+main>.proyectos>.proximamente>.tituloProyecto {
+    text-align: center;
+    width: 100%;
 }
 
 main>.proyectos>.proyecto>div>i:hover {
@@ -403,7 +421,7 @@ main>.trabajos {
         padding-bottom: 10px;
     }
     main>.proyectos {
-        grid-template-areas: "titulo titulo" "shopmarket lab3";
+        grid-template-areas: "titulo titulo" "shopmarket lab3" "lab2 prox";
     }
     .proyecto h4 {
         font-size: 25px;
