@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    font-size: 62.5%;
+html {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,33 +11,21 @@ a {
     text-decoration: none;
 }
 
-@keyframes neon {
-    0% {
-        box-shadow: none;
-    }
-    100% {
-        box-shadow: 0 0 20px inset #64FFDA;
-    }
-}
-
 header {
-    border-bottom: 1px solid #64FFDA;
     position: sticky;
     top: 0;
-    grid-area: header;
-    background-color: #153565;
-    z-index: 1000;
-    height: 85px;
-    animation: neon 2s linear infinite alternate both;
+    background-color: none;
+    z-index: 100000;
+    background-color: white;
+    height: 75px;
+    border-bottom: 1px solid black;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    height: 100%;
-    padding-right: 25px;
+    padding: 0 1.5rem;
 }
 
 .hamburger {
@@ -56,8 +37,9 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: #101010;
 }
 
 .nav-menu {
@@ -67,44 +49,41 @@ header {
 }
 
 .nav-item {
-    /*  margin-left: 5rem; */
-    padding: 10px;
+    margin-left: 5rem;
 }
 
 .nav-link {
-    font-size: 19px;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: white;
+    color: #475569;
 }
 
 .nav-link:hover {
-    color: #64FFDA;
+    color: #482ff7;
+}
+
+.nav-logo>img {
+    width: 70px;
 }
 
 @media only screen and (max-width: 1000px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 85px;
+        top: 0px;
         flex-direction: column;
-        background-color: #0f2649;
+        background-color: white;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        height: 100vh;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        border: 1px solid #64FFDA;
-        box-shadow: 0 0 10px inset #64FFDA;
     }
     .nav-menu.active {
-        top: 85px;
         left: 0;
-        right: 0;
     }
     .nav-item {
-        padding: 20px;
-        margin: 0;
+        margin: 2.5rem 0;
     }
     .hamburger {
         display: block;
@@ -119,8 +98,4 @@ header {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-}
-
-body>div {
-    min-height: 700px;
 }
