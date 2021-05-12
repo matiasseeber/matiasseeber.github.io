@@ -37,7 +37,7 @@
     }
     
     main>.presentacion {
-        scroll-margin-top: 50px;
+        scroll-margin-top: 70px;
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -82,7 +82,7 @@
     }
     
     main .experiencia {
-        scroll-margin-top: 30px;
+        scroll-margin-top: 60px;
         background-image: url(img/pexels-hasan-albari-1229861.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -140,7 +140,7 @@
     
     main>.proyectos {
         text-align: center;
-        scroll-margin-top: 70px;
+        scroll-margin-top: 110px;
     }
     
     main>.proyectos>.proyecto {
@@ -186,7 +186,7 @@
     }
     
     main>.tecnologias {
-        scroll-margin-top: 20px;
+        scroll-margin-top: 50px;
         background-image: url(img/pexels-negative-space-160107.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -225,7 +225,7 @@
     }
     
     main>.contacto {
-        scroll-margin-top: 60px;
+        scroll-margin-top: 100px;
         background: lightgrey;
     }
     
