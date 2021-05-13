@@ -57,10 +57,13 @@ header {
     font-size: 1.6rem;
     font-weight: 400;
     color: #475569;
+    transition: 0.5s;
 }
 
 .nav-link:hover {
-    color: #482ff7;
+    color: #64FFDA;
+    border-bottom: 1px solid #64FFDA;
+    transform: translateY(-5px);
 }
 
 .nav-logo>img {

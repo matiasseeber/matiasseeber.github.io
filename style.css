@@ -8,6 +8,31 @@
         line-height: 1.6;
     }
     
+    .scrollToTop-btn {
+        z-index: 999;
+        position: fixed;
+        background-color: #3a6cf4;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        right: 0;
+        bottom: 10px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 3px;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .scrollToTop-btn.active {
+        right: 20px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
     @keyframes entradaDesdeArriba {
         0% {
             transform: translateY(-1500px);
@@ -17,10 +42,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-    }
-    
-    main {
-        animation: entradaDesdeArriba 3s both 1 ease-in-out;
     }
     
     main>section {
@@ -37,16 +58,23 @@
     }
     
     main>.presentacion {
-        scroll-margin-top: 150px;
-        padding: 20px;
+        scroll-margin-top: 40px;
+        padding: 0 20px 20px 20px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
     
+    main>.presentacion>* {
+        width: 100%;
+    }
+    
     main>.presentacion>h1 {
         font-size: 50px;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     main>.presentacion>h2 {
@@ -271,6 +299,26 @@
         box-shadow: 0 0 10px #64FFDA;
     }
     
+    .contacto>div {
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        color: black;
+        border-radius: 10px;
+    }
+    
+    .contacto>div>* {
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        font-size: 25px;
+    }
+    
+    .contacto>div>i {
+        font-size: 70px;
+    }
+    
     footer {
         border-top: white 2px solid;
         background: black;
@@ -344,7 +392,22 @@
         display: none;
     }
     
+    .reveal {
+        position: relative;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1.5s ease;
+    }
+    
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
     @media only screen and (min-width:768px) {
+        main>.proyectos>.proyecto {
+            margin: 20px 20%;
+        }
         main>.experiencia>h3 {
             padding: 10px;
             font-size: 40px;
@@ -360,8 +423,7 @@
         .menu {
             display: inline;
         }
-        footer>.redes,
-        footer>.fa {
-            display: none;
+        main>.contacto>div {
+            margin: 20px 20%;
         }
     }
