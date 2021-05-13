@@ -58,7 +58,7 @@
     }
     
     main>.presentacion {
-        scroll-margin-top: 40px;
+        scroll-margin-top: 100px;
         padding: 0 20px 20px 20px;
         display: flex;
         justify-content: center;
@@ -299,23 +299,27 @@
         box-shadow: 0 0 10px #64FFDA;
     }
     
-    .contacto>div {
+    .contacto {
+        background: white;
+    }
+    
+    .contacto>div>div {
         text-align: center;
         padding: 20px;
         margin: 20px;
-        background: white;
+        background: #e6e6e6;
         color: black;
         border-radius: 10px;
     }
     
-    .contacto>div>* {
+    .contacto>div>div>* {
         text-align: center;
         padding: 5px;
         margin: 5px;
         font-size: 25px;
     }
     
-    .contacto>div>i {
+    .contacto>div>div>i {
         font-size: 70px;
     }
     
@@ -423,7 +427,7 @@
         .menu {
             display: inline;
         }
-        main>.contacto>div {
-            margin: 20px 20%;
+        main>.contacto {
+            padding: 0 20%;
         }
     }
