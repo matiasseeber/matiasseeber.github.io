@@ -252,11 +252,6 @@
         font-weight: bold;
     }
     
-    main>.contacto {
-        scroll-margin-top: 70px;
-        background: lightgrey;
-    }
-    
     main>.contacto>form {
         text-align: center;
         margin: 10px;
