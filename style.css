@@ -423,6 +423,18 @@
             display: inline;
         }
         main>.contacto {
-            padding: 0 20%;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        main>.contacto>h3 {
+            width: 100%;
+        }
+        main>.contacto>form,
+        main>.contacto>div {
+            width: 50%;
+            margin: 0;
+            padding: 0 80px;
         }
     }
