@@ -173,10 +173,9 @@
     
     main>.proyectos>.proyecto {
         text-align: center;
-        background: lightgrey;
         padding: 20px;
         margin: 20px;
-        border-radius: 10px;
+        border: 1px solid #64FFDA;
         color: black;
         display: flex;
         flex-wrap: wrap;
@@ -185,6 +184,7 @@
     
     main>.proyectos>.proyecto:hover {
         transform: scale(1.03);
+        background-color: #64FFDA;
         box-shadow: black 0 0 10px;
     }
     
