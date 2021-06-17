@@ -297,6 +297,9 @@
     .contacto {
         background: white;
         scroll-margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .contacto>div>div {
