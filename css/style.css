@@ -101,7 +101,7 @@ header > ul > li > a {
     font-size: 25px;
   }
 }
-.contactButton, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
+.contactButton, footer .submit, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
   font-size: 25px;
   padding: 10px 20px;
   margin: 0 0 30px;
@@ -113,7 +113,7 @@ header > ul > li > a {
   cursor: pointer;
 }
 
-.contactButton:hover, main > .proyects > div > a:hover, main > .tecnologies > div > a:hover, main > .divFullstackContact > .textDivFullstackContact > a:hover {
+.contactButton:hover, footer .submit:hover, main > .proyects > div > a:hover, main > .tecnologies > div > a:hover, main > .divFullstackContact > .textDivFullstackContact > a:hover {
   background-color: linear-gradient(45deg, #00ff88 26%, #00feff 78%);
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: #262626;
@@ -122,7 +122,7 @@ header > ul > li > a {
 }
 
 @media only screen and (min-width: 768px) {
-  .contactButton, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
+  .contactButton, footer .submit, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
     font-size: 30px;
   }
 }
@@ -367,19 +367,13 @@ footer {
   padding: 0 15px;
 }
 footer .submit {
-  font-size: 25px;
-  padding: 10px 20px;
-  margin: 0 0 30px;
-  border: 1px solid #00feff;
-  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
-  cursor: pointer;
-  transition: 1s;
-  color: #00feff;
-}
-footer .submit:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #00feff;
+  padding: 20px;
+  width: 145px;
+  height: 52px;
 }
 footer > section {
   display: flex;
@@ -492,7 +486,6 @@ h4 {
 
 body {
   background-color: #212121;
-  min-height: 1000px;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 768px) {
