@@ -1,0 +1,21 @@
+@use "colors";
+.title {
+    font-size: 35px;
+    font-weight: 900;
+    background: colors.$gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px 0;
+    transition: 1s;
+}
+
+.title:hover {
+    cursor: default;
+    text-shadow: 0 0 30px colors.$borderButtons;
+}
+
+@media only screen and (min-width:768px) {
+    .title {
+        font-size: 40px;
+    }
+}

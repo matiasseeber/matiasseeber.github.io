@@ -1,0 +1,17 @@
+@use "colors";
+@use "buttons";
+@use "divTitle";
+@use "about";
+@use "tecnologies";
+@use "sliderVertical";
+@use "sections";
+@use "proyects";
+main {
+    padding: 0 15px;
+    >section {
+        @extend .section;
+    }
+    p {
+        font-size: 20px;
+    }
+}

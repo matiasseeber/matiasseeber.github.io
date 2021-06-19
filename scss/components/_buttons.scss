@@ -1,0 +1,26 @@
+@use "colors";
+.contactButton {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    border: 1px solid colors.$borderButtons;
+    background: colors.$gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.contactButton:hover {
+    background-color: colors.$gradient;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: colors.$divBackground;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px colors.$borderButtons;
+}
+
+@media only screen and (min-width:768px) {
+    .contactButton {
+        font-size: 30px;
+    }
+}

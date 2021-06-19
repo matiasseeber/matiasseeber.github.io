@@ -1,0 +1,50 @@
+@use "colors";
+@use "title";
+@use "sliderVertical";
+@use "buttons";
+main {
+    >.tecnologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            @extend .title;
+        }
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p {
+                padding: 0 40px 20px;
+                color: colors.$textColor;
+                text-align: center;
+            }
+            >a {
+                @extend .contactButton;
+            }
+        }
+        >.technologiesdivimg {
+            scroll-margin-top: 0px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    main {
+        >.tecnologies {
+            flex-direction: row;
+            >div {
+                width: 50%;
+            }
+            >.technologiesdivimg {
+                width: 50%;
+                scroll-margin-top: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

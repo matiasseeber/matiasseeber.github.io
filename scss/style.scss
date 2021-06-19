@@ -1,0 +1,44 @@
+@use "components/header";
+@use "components/main";
+@use "components/footer";
+@use "components/colors";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    scroll-margin-top: 30px;
+}
+
+*::selection {
+    background-color: colors.$borderButtons;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+body {
+    background-color: colors.$background;
+    min-height: 1000px;
+}
+
+@media only screen and (min-width:500px) and (max-width:768px) {
+    body {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        padding: 0 10%;
+    }
+}

@@ -1,0 +1,8 @@
+@use "colors";
+@use "buttons";
+.section {
+    background-color: colors.$divBackground;
+    margin: 50px 0;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba($color: black, $alpha: 0.2);
+}

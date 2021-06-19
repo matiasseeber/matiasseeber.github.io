@@ -1,0 +1,59 @@
+@use "colors";
+@use "buttons";
+@use "title";
+main {
+    >.divFullstackContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >div {
+            height: 0%;
+            width: 0%;
+            >img {
+                display: none;
+            }
+        }
+        >.textDivFullstackContact {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            >h2 {
+                text-align: center;
+                @extend .title;
+            }
+            >a {
+                @extend .contactButton;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    main {
+        >.divFullstackContact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            >div {
+                height: 100%;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >img {
+                    width: 60%;
+                    display: initial;
+                }
+            }
+            >.textDivFullstackContact {
+                height: 100%;
+                width: 50%;
+            }
+        }
+    }
+}

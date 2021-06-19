@@ -1,0 +1,74 @@
+@use "colors";
+@use "buttons";
+@use "title";
+main {
+    >.proyects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        >div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            >h2 {
+                @extend .title;
+            }
+            >a {
+                @extend .contactButton;
+            }
+        }
+        >ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            >li {
+                text-align: center;
+                padding: 10px;
+                >a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    transition: 1s;
+                    padding: 10px;
+                    background-color: colors.$divBackground;
+                    >h4 {
+                        @extend .title;
+                        font-size: 25px;
+                        padding: 0px 0 10px;
+                    }
+                    >p {
+                        text-align: left;
+                        padding: 0 40px;
+                        color: colors.$textColor;
+                    }
+                }
+                >a:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 10px rgba(colors.$borderButtons, 0.2);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    main {
+        >.proyects {
+            flex-direction: row;
+            >div {
+                width: 50%;
+            }
+            >ul {
+                width: 50%;
+            }
+        }
+    }
+}
