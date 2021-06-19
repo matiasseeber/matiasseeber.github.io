@@ -405,7 +405,7 @@ footer > section > div > form {
   flex-wrap: wrap;
   padding-top: 20px;
 }
-footer > section > div > form > button {
+footer > section > div > form > .submit {
   font-size: 25px;
   padding: 10px 20px;
   margin: 0 0 30px;
@@ -415,7 +415,7 @@ footer > section > div > form > button {
   cursor: pointer;
   transition: 1s;
 }
-footer > section > div > form > button:hover {
+footer > section > div > form > .submit:hover {
   box-shadow: 0 0 20px #00feff;
   transform: scale(1.1);
 }

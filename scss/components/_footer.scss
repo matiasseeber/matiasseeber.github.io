@@ -53,7 +53,7 @@ footer {
                 textarea {
                     @extend .controlesForm;
                 }
-                >button {
+                >.submit {
                     font-size: 25px;
                     padding: 10px 20px;
                     margin: 0 0 30px;
@@ -63,7 +63,7 @@ footer {
                     cursor: pointer;
                     transition: 1s;
                 }
-                >button:hover {
+                >.submit:hover {
                     box-shadow: 0 0 20px colors.$borderButtons;
                     transform: scale(1.1);
                 }
