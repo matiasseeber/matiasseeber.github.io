@@ -9,16 +9,18 @@ footer {
         font-size: 25px;
         padding: 10px 20px;
         margin: 0 0 30px;
-        border: 1px solid colors.$borderButtons;
+        border: none;
+        border-bottom: 1px solid colors.$borderButtons;
         background: transparent;
         margin-top: 30px;
         cursor: pointer;
         transition: 1s;
         color: colors.$borderButtons;
+        text-shadow: 0 0 10px colors.$borderButtons;
     }
     .submit:hover {
         transform: scale(1.1);
-        box-shadow: 0 0 20px colors.$borderButtons;
+        text-shadow: 0 0 20px colors.$borderButtons;
     }
     >section {
         @extend .section;
