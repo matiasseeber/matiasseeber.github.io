@@ -22,7 +22,7 @@ header {
   padding: 0 15px;
 }
 header > nav {
-  height: 65px;
+  height: 80px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -96,7 +96,7 @@ header > ul > li > a {
   max-height: 264px;
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 400px) {
   header > nav > div > h2 {
     font-size: 27px;
   }
