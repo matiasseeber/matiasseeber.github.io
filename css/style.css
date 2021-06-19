@@ -366,6 +366,21 @@ footer > section > div > form textarea:focus {
 footer {
   padding: 0 15px;
 }
+footer .submit {
+  font-size: 25px;
+  padding: 10px 20px;
+  margin: 0 0 30px;
+  border: 1px solid #00feff;
+  background: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 1s;
+  color: #00feff;
+}
+footer .submit:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00feff;
+}
 footer > section {
   display: flex;
   flex-direction: column;
@@ -404,20 +419,6 @@ footer > section > div > form {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 20px;
-}
-footer > section > div > form > .submit {
-  font-size: 25px;
-  padding: 10px 20px;
-  margin: 0 0 30px;
-  border: 1px solid #00feff;
-  background: linear-gradient(45deg, #00ff88 26%, #00feff 78%);
-  margin-top: 30px;
-  cursor: pointer;
-  transition: 1s;
-}
-footer > section > div > form > .submit:hover {
-  box-shadow: 0 0 20px #00feff;
-  transform: scale(1.1);
 }
 footer > section > div > form div {
   width: 100%;

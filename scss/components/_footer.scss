@@ -5,6 +5,21 @@
 @use "controlesForm";
 footer {
     padding: 0 15px;
+    .submit {
+        font-size: 25px;
+        padding: 10px 20px;
+        margin: 0 0 30px;
+        border: 1px solid colors.$borderButtons;
+        background: transparent;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: 1s;
+        color: colors.$borderButtons;
+    }
+    .submit:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px colors.$borderButtons;
+    }
     >section {
         @extend .section;
         display: flex;
@@ -52,20 +67,6 @@ footer {
                 input,
                 textarea {
                     @extend .controlesForm;
-                }
-                >.submit {
-                    font-size: 25px;
-                    padding: 10px 20px;
-                    margin: 0 0 30px;
-                    border: 1px solid colors.$borderButtons;
-                    background: colors.$gradient;
-                    margin-top: 30px;
-                    cursor: pointer;
-                    transition: 1s;
-                }
-                >.submit:hover {
-                    box-shadow: 0 0 20px colors.$borderButtons;
-                    transform: scale(1.1);
                 }
                 div {
                     width: 100%;
