@@ -98,10 +98,10 @@ header > ul > li > a {
 
 @media only screen and (max-width: 400px) {
   header > nav > div > h2 {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
-.contactButton, footer > section > div > form > button, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
+.contactButton, footer > section > div > form > #enviar, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
   font-size: 25px;
   padding: 10px 20px;
   margin: 0 0 30px;
@@ -113,7 +113,7 @@ header > ul > li > a {
   cursor: pointer;
 }
 
-.contactButton:hover, footer > section > div > form > button:hover, main > .proyects > div > a:hover, main > .tecnologies > div > a:hover, main > .divFullstackContact > .textDivFullstackContact > a:hover {
+.contactButton:hover, footer > section > div > form > #enviar:hover, main > .proyects > div > a:hover, main > .tecnologies > div > a:hover, main > .divFullstackContact > .textDivFullstackContact > a:hover {
   background-color: linear-gradient(45deg, #00ff88 26%, #00feff 78%);
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: #262626;
@@ -122,7 +122,7 @@ header > ul > li > a {
 }
 
 @media only screen and (min-width: 768px) {
-  .contactButton, footer > section > div > form > button, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
+  .contactButton, footer > section > div > form > #enviar, main > .proyects > div > a, main > .tecnologies > div > a, main > .divFullstackContact > .textDivFullstackContact > a {
     font-size: 30px;
   }
 }
@@ -405,7 +405,7 @@ footer > section > div > form {
   flex-wrap: wrap;
   padding-top: 20px;
 }
-footer > section > div > form > button {
+footer > section > div > form > #enviar {
   margin-top: 30px;
 }
 footer > section > div > form div {
