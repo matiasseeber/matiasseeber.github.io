@@ -39,7 +39,6 @@ let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
 let tema = document.getElementById("Tema");
 let comentarios = document.getElementById("comentarios");
-let enviar = document.getElementById("submit");
 
 function validationFormContact() {
     let submit = true;
@@ -70,7 +69,6 @@ function validationFormContact() {
     return submit;
 }
 
-enviar.onclick = function() {
-    if (validationFormContact())
-        form.submit();
+form.onsubmit = function() {
+    return validationFormContact();
 }
