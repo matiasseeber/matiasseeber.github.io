@@ -68,8 +68,18 @@ header {
             padding: 10px 10px;
             padding-left: 20px;
             font-size: 20px;
+            transition: 1s;
+            z-index: 1;
             >a {
                 color: colors.$navListItems;
+            }
+            &:hover {
+                transform: scale(1.02);
+                background: colors.$gradient;
+                cursor: pointer;
+                >a {
+                    color: colors.$divBackground;
+                }
             }
         }
     }

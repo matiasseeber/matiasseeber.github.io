@@ -87,9 +87,19 @@ header > ul > li {
   padding: 10px 10px;
   padding-left: 20px;
   font-size: 20px;
+  transition: 1s;
+  z-index: 1;
 }
 header > ul > li > a {
   color: white;
+}
+header > ul > li:hover {
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #00ff88 26%, #00feff 78%);
+  cursor: pointer;
+}
+header > ul > li:hover > a {
+  color: #262626;
 }
 
 .navActive {
@@ -496,6 +506,25 @@ h4 {
 
 body {
   background-color: #212121;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #262626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 0 5px #00feff inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00feff;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 768px) {
